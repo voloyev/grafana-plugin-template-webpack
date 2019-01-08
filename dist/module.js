@@ -106,27 +106,27 @@ var Ctrl = function (_PanelCtrl) {
   }
 
   _createClass(Ctrl, [{
-    key: 'link',
+    key: "link",
     value: function link(scope, element) {
       this.initStyles();
     }
   }, {
-    key: 'initStyles',
+    key: "initStyles",
     value: function initStyles() {
-      window.System.import(this.panelPath + 'css/panel.base.css!');
+      window.System.import(this.panelPath + "css/panel.base.css!");
       // Remove next lines if you don't need separate styles for light and dark themes
       if (grafanaBootData.user.lightTheme) {
-        window.System.import(this.panelPath + 'css/panel.light.css!');
+        window.System.import(this.panelPath + "css/panel.light.css!");
       } else {
-        window.System.import(this.panelPath + 'css/panel.dark.css!');
+        window.System.import(this.panelPath + "css/panel.dark.css!");
       }
       // Remove up to here
     }
   }, {
-    key: 'panelPath',
+    key: "panelPath",
     get: function get() {
       if (this._panelPath === undefined) {
-        this._panelPath = '/public/plugins/' + this.pluginId + '/';
+        this._panelPath = "/public/plugins/" + this.pluginId + "/";
       }
       return this._panelPath;
     }
@@ -135,7 +135,7 @@ var Ctrl = function (_PanelCtrl) {
   return Ctrl;
 }(_sdk.PanelCtrl);
 
-Ctrl.templateUrl = 'partials/template.html';
+Ctrl.templateUrl = "partials/template.html";
 
 exports.PanelCtrl = Ctrl;
 
@@ -165,3 +165,4 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
 /***/ })
 /******/ ])});;
+//# sourceMappingURL=module.js.map
